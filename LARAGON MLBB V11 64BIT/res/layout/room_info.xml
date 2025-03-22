@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:background="@drawable/row_border" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="8.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/idplayer" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/namePlayer" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="102.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/squad" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/winRate" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/rank" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/country" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="40.0dip" android:layout_height="20.0dip" />
+    <ImageView android:id="@id/iconHero" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="40.0dip" android:layout_height="20.0dip" />
+    <ImageView android:id="@id/spellHero" android:background="@drawable/row_border" android:padding="1.0dip" android:layout_width="36.0dip" android:layout_height="20.0dip" />
+</TableRow>

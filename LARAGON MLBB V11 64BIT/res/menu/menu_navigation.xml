@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_home" android:id="@id/navhome" android:title="@string/home" />
+    <item android:icon="@drawable/ic_linux" android:id="@id/navdriver" android:title="@string/driver" />
+    <item android:icon="@drawable/ic_database_cog" android:id="@id/navtools" android:title="@string/service_info" />
+</menu>

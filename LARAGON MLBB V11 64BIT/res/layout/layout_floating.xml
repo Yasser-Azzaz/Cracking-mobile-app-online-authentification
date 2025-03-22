@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end|fill_horizontal|start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layoutControlView" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/miniFloatMenu" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/floatImage" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/float_logo" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/mainFloatMenu" android:background="@drawable/f_round" android:visibility="gone" android:layout_width="580.0dip" android:layout_height="290.0dip">
+            <ImageView android:layout_gravity="end|center" android:layout_width="170.0dip" android:layout_height="290.0dip" android:src="@drawable/ic_corner_right" android:scaleType="fitCenter" android:alpha="0.8" android:layout_marginEnd="-50.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="0.0dip">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/closeButton" android:background="@drawable/round_icon" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_close" android:tint="@color/white" />
+                                <ImageView android:layout_gravity="center" android:padding="5.0dip" android:layout_width="170.0dip" android:layout_height="35.0dip" android:layout_marginRight="35.0dip" android:src="@drawable/float_text" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="start" android:orientation="horizontal" android:background="#55eeeeee" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:elevation="2.0dip">
+                            <LinearLayout android:id="@id/playerBtn" android:layout_width="48.0dip" android:layout_height="42.0dip" android:layout_margin="0.0dip" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/round_icon_f" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_account_eye" android:tint="@color/white" />
+                                <TextView android:textStyle="bold" android:textColor="@color/textfloat" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="PLAYER" fontPath="fonts/Roboto-Bold.ttf" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/roomBtn" android:layout_width="48.0dip" android:layout_height="42.0dip" android:layout_margin="0.0dip" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/round_icon_f" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_home_switch_outline" android:tint="@color/white" />
+                                <TextView android:textStyle="bold" android:textColor="@color/textfloat" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ROOM" fontPath="fonts/Roboto-Bold.ttf" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/monsterBtn" android:layout_width="48.0dip" android:layout_height="42.0dip" android:layout_margin="0.0dip" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/round_icon_f" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_owl" android:tint="@color/white" />
+                                <TextView android:textStyle="bold" android:textColor="@color/textfloat" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="MONSTER" fontPath="fonts/Roboto-Bold.ttf" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/otherBtn" android:layout_width="48.0dip" android:layout_height="42.0dip" android:layout_margin="0.0dip" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/round_icon_f" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_fire" android:tint="@color/white" />
+                                <TextView android:textStyle="bold" android:textColor="@color/textfloat" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="OTHER" fontPath="fonts/Roboto-Bold.ttf" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/setBtn" android:layout_width="48.0dip" android:layout_height="42.0dip" android:layout_margin="0.0dip" android:layout_weight="1.0">
+                                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/round_icon_f" android:padding="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_cog_sync" android:tint="@color/white" />
+                                <TextView android:textStyle="bold" android:textColor="@color/textfloat" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="SETTING" fontPath="fonts/Roboto-Bold.ttf" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <ScrollView android:layout_gravity="center_horizontal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <LinearLayout android:orientation="vertical" android:id="@id/roominfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                                                            <RadioGroup android:orientation="horizontal" android:id="@id/roomselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                                                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/teamroom" android:tag="1" android:background="@drawable/bg_radiobit" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:checked="true" android:button="@android:color/transparent" android:text="Team Room" android:layout_weight="1.0" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/enemyroom" android:tag="1" android:background="@drawable/bg_radiobit" android:layout_width="100.0dip" android:layout_height="35.0dip" android:checked="false" android:button="@android:color/transparent" android:text="Enemy Room" android:layout_weight="1.0" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            </RadioGroup>
+                                                            <TableRow android:background="@drawable/header_border" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="100.0dip" android:layout_height="20.0dip" android:text="ID" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="102.0dip" android:layout_height="20.0dip" android:text="Name" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="20.0dip" android:text="Squad" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="20.0dip" android:text="WinRate" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="80.0dip" android:layout_height="20.0dip" android:text="Rank" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="40.0dip" android:layout_height="20.0dip" android:text="Country" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:text="Hero" />
+                                                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:background="@drawable/header_border" android:padding="1.0dip" android:layout_width="36.0dip" android:layout_height="20.0dip" android:text="Spell" />
+                                                            </TableRow>
+                                                            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                            <LinearLayout android:orientation="vertical" android:id="@id/menu1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Activate Draw" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Activate all function of draw" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/drawesp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isDraw" style="@style/Widget.App.Switch" />
+                                                        </LinearLayout>
+                                                        <Button android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/killapp" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="EXIT DRAW" android:layout_weight="1.0" />
+                                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Line" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show player line in match" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawLine" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isDrawline" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Health" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show enemy health in match" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawHealth" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isDrawHealth" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Avatar" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show avatar player in match" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawAvatar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isAvatar" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw 360 Alert" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show 360 alert on screen" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawAlert" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isAlert" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Enemy Cooldown" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show enemy cooldown in match" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawCooldown" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isCooldown" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Minimap" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show icon player in minimap" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawMinimap" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="mmap" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Outline Minimap" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show the minimap size" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawOutMinimap" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="smmap" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Minimap Size" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Custom size of minimap" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isMinimapSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="800" android:progress="400" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isMinimapSizeText" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Minimap Pos" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Custom position minimap" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isMinimapPos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="500" android:progress="105" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isMinimapPosText" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Icon Size" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Custom icon size minimap" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isIconSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="500" android:progress="105" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isIconSizeText" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                            <LinearLayout android:orientation="vertical" android:id="@id/menu2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Monster Icon" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show monster icon in match" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawMonsterIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isMIcon" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Draw Monster Health" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show monster health in match" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawMonsterHealth" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isMHealth" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Warn Lord/Turtle Attack" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show warn when lord/turle attack" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDrawWarnMonster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isMWarn" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                            <LinearLayout android:orientation="vertical" android:id="@id/menu3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="DroneView" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To enable droneview feature" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isDroneView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isDrone" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="DroneView Height" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Custom droneview height" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isDroneViewHeight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="30" android:progress="0" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isDroneViewText" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:id="@id/touchlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Auto Retribution" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To enable auto retribution" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isEnableRetri" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isRetri" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Target Retribution" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To setting target retribution" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <RadioGroup android:orientation="horizontal" android:id="@id/targetretri" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                                                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/buff" android:tag="1" android:background="@drawable/bg_radiobit" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:checked="true" android:button="@android:color/transparent" android:text="Buff" android:layout_weight="1.0" />
+                                                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/lturtle" android:tag="2" android:background="@drawable/bg_radiobit" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:checked="false" android:button="@android:color/transparent" android:text="Lord Turtle" android:layout_weight="1.0" />
+                                                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textfloat" android:gravity="center" android:id="@id/both" android:tag="3" android:background="@drawable/bg_radiobit" android:layout_width="100.0dip" android:layout_height="35.0dip" android:checked="false" android:button="@android:color/transparent" android:text="Both" android:layout_weight="1.0" />
+                                                            </RadioGroup>
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Touch Reverse" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="To reverse touch function" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isReverse" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isReverse" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                                                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show Touch" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show touch position" />
+                                                            </LinearLayout>
+                                                            <com.google.android.material.materialswitch.MaterialSwitch android:textColor="#00000000" android:id="@id/isShowTouch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="isSTouch" style="@style/Widget.App.Switch" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Touch Position X" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Change position horizontal" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isTouchX" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="2340" android:progress="1450" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isTouchXtxt" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Touch Position Y" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Change position vertical" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isTouchY" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="1080" android:progress="950" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isTouchYtxt" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                            <LinearLayout android:orientation="vertical" android:id="@id/menu4" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                                                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip">
+                                                            <LinearLayout android:orientation="horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                                            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Transparency Floating Icon" fontPath="fonts/Roboto-Medium.ttf" />
+                                                            <TextView android:textSize="12.0sp" android:textColor="@color/subtext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Set transparency floating icon" />
+                                                            </LinearLayout>
+                                                            <ImageView android:id="@id/exampleicon" android:padding="5.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/float_logo" />
+                                                            </LinearLayout>
+                                                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                                            <SeekBar android:id="@id/isAlphaIcon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:thumb="@drawable/ic_switch_off" android:layout_weight="1.0" android:progressTint="@color/main" />
+                                                            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/textfloat" android:id="@id/isAlphaIconText" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                                                            </LinearLayout>
+                                                            </LinearLayout>
+                                                        </LinearLayout>
+                                                    </LinearLayout>
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

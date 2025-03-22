@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+        <TextView android:textSize="35.0sp" android:textColor="@color/textfloat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/app_name_toolbar" fontPath="fonts/Roboto-Bold.ttf" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="External plugin for Mobile Legend" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="45.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" app:cardBackgroundColor="@color/card1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:strokeColor="@android:color/transparent">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="35.0dip" android:layout_marginStart="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+                            <TextView android:textAppearance="@style/TextAppearance.Material3.TitleLarge" android:textSize="25.0sp" android:textColor="@color/textfloat" android:id="@id/main_tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Welcome" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/subtext" android:id="@id/main_tv_statusinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Login to continue" />
+                            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="100.0dip" android:layout_marginBottom="10.0dip" app:boxCornerRadiusBottomEnd="5.0dip" app:boxCornerRadiusTopEnd="5.0dip" app:boxCornerRadiusTopStart="5.0dip" app:boxStrokeWidth="0.0dip" app:passwordToggleEnabled="true" app:passwordToggleTint="#ff646363" app:startIconTint="#ff646363">
+                                <com.google.android.material.textfield.TextInputEditText android:textSize="14.0sp" android:id="@id/textUsername" android:background="@drawable/round_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/btnSignIn" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Login" app:backgroundTint="@color/main" app:cornerRadius="30.0dip" app:icon="@drawable/ic_arrow_right_bold_circle" app:iconTint="@color/white" app:rippleColor="@color/ripple_color" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@id/main_iv_status" android:layout_width="170.0dip" android:layout_height="200.0dip" android:src="@drawable/ic_corner_right" android:alpha="0.8" android:layout_marginEnd="-50.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="50.0dip" app:cardBackgroundColor="@color/card1" app:strokeColor="@android:color/transparent">
+                    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip">
+                            <ImageView android:background="@drawable/round_icon" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_support" android:layout_marginEnd="8.0dip" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/textfloat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/support_us" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/join_and_support_laragon_to_get_information_and_update_installation_packages" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/telegram" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_tg" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/discord" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_discord" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

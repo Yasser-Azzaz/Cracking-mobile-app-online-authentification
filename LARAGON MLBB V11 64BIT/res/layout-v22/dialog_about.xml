@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/round" android:layout_width="350.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/main_card_status" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/card1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:strokeColor="@android:color/transparent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="35.0dip" android:layout_marginStart="20.0dip" android:layout_marginVertical="35.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:textAppearance="@style/TextAppearance.Material3.TitleLarge" android:textSize="25.0sp" android:textColor="@color/textfloat" android:id="@id/main_tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/about" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Author : " />
+                    <TextView android:textSize="14.0sp" android:textColor="@android:color/holo_blue_dark" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anonymous" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App Version : " />
+                    <TextView android:textSize="14.0sp" android:textColor="@android:color/holo_blue_dark" android:id="@id/apkversion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/okButton" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK" app:backgroundTint="@color/main" app:cornerRadius="30.0dip" app:iconTint="@color/white" app:rippleColor="@color/ripple_color" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/main_iv_status" android:layout_width="170.0dip" android:layout_height="200.0dip" android:src="@drawable/ic_corner_right" android:alpha="0.8" android:layout_marginEnd="-50.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

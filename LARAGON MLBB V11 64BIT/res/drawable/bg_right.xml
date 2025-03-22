@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0.0dip" android:top="0.0dip" android:right="30.0dip" android:bottom="0.0dip">
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/card1" />
+        </shape>
+    </item>
+    <item android:left="0.0dip" android:right="0.0dip">
+        <bitmap android:gravity="center|right" android:src="@drawable/ic_corner_right" android:scaleType="fitCenter" android:height="100.0dip" android:width="50.0dip" android:tileMode="disabled" />
+    </item>
+</layer-list>

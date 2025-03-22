@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:menu="@menu/toolbar_menu" app:title="@string/app_name_toolbar" app:titleTextColor="@color/textfloat" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layout_marginBottom="80.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/botnav" android:background="@color/card1" android:layout_width="fill_parent" android:layout_height="wrap_content" app:itemActiveIndicatorStyle="@style/ActiveIndicator" app:itemIconTint="#ff222222" app:itemTextColor="#ff222222" app:menu="@menu/menu_navigation" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
